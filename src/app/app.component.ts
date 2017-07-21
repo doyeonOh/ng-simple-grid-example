@@ -13,11 +13,11 @@ export class AppComponent {
   @ViewChild('grid')
   grid: GridComponent;
 
-  ngSimpleGrid: any = {
+  gridConfig: any = {
     columns: [
-      { type: 'text',   key: 'id',     name:'ID', nullValue: '1'},
+      { type: 'text',   key: 'id',     name:'ID',     nullValue: '1'},
       { type: 'text',   key: 'name',   name:'NAME',   nullValue: '2'},
-      { type: 'button', key: 'email',  name:'EMAIL', nullValue: '3', 
+      { type: 'button', key: 'email',  name:'EMAIL',  nullValue: '3', 
         onClick: (e: any, value: any, data: any, index: number) => {
           alert(value);
         }},
@@ -32,12 +32,11 @@ export class AppComponent {
     }
   };
 
-  dataList: any;
+  dataList: any[];
 
   ngOnInit(): void {
     this.dataList = sampleDataList;
   }
-
 
   
 }
