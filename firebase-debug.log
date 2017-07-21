@@ -1,0 +1,34 @@
+[debug] [2017-07-21T08:33:17.648Z] ----------------------------------------------------------------------
+[debug] [2017-07-21T08:33:17.650Z] Command:      /usr/bin/nodejs /usr/bin/firebase deploy
+[debug] [2017-07-21T08:33:17.650Z] CLI Version:  3.9.1
+[debug] [2017-07-21T08:33:17.650Z] Platform:     linux
+[debug] [2017-07-21T08:33:17.650Z] Node Version: v6.10.0
+[debug] [2017-07-21T08:33:17.650Z] Time:         Fri Jul 21 2017 17:33:17 GMT+0900 (KST)
+[debug] [2017-07-21T08:33:17.651Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-21T08:33:17.659Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-21T08:33:17.659Z] > authorizing via signed-in user
+[debug] [2017-07-21T08:33:17.661Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ng-simple-grid-example  
+ Fri Jul 21 2017 17:33:17 GMT+0900 (KST)
+[debug] [2017-07-21T08:33:18.914Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-21T08:33:18.915Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ng-simple-grid-example/tokens  
+ Fri Jul 21 2017 17:33:18 GMT+0900 (KST)
+[debug] [2017-07-21T08:33:19.886Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ng-simple-grid-example'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2017-07-21T08:33:22.157Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ng-simple-grid-example/uploads/-KpZGtzCEWgwG7YPmR6q?fileCount=12&message=  
+ Fri Jul 21 2017 17:33:22 GMT+0900 (KST)
+[debug] [2017-07-21T08:33:25.340Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-21T08:33:25.340Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 12 files uploaded successfully
+[info] i  starting release process (may take several minutes)...
+[debug] [2017-07-21T08:33:37.145Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/ng-simple-grid-example/releases { hosting: 
+   { public: 'dist',
+     rewrites: [],
+     version: '-KpZGtzCEWgwG7YPmR6q',
+     prefix: '-KpZGtzCEWgwG7YPmR6q/',
+     manifest: [] } } 
+ Fri Jul 21 2017 17:33:37 GMT+0900 (KST)
